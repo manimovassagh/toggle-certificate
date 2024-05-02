@@ -1,0 +1,34 @@
+{
+  clientCertificates: [
+    {
+      user: 'Sandy', 
+      url: 'https://a.host.com',
+      ca: ['certs/ca.pem'],
+      certs: [
+        {
+          ...
+        },
+      ],
+    },
+    {
+      user: 'Mandy', 
+      url: 'https://b.host.com/a_base_route/**',
+      ca: [],
+      certs: [
+        {
+          ...
+        },
+      ],
+    },
+    {
+      user: 'Randy', 
+      url: 'https://a.host.*.com/',
+      ca: [],
+      certs: [
+        {
+          ...
+        },
+      ],
+    },
+  ],
+}
